@@ -10,7 +10,7 @@ export interface IUser {
 }
 
 export interface IUserStateProps {
-  user: null | IUser; 
+  user: null | IUser;
 }
 
 export const initialState: IUserStateProps = {
@@ -27,5 +27,5 @@ export const userSlice = createSlice({
   },
 });
 
-export default userSlice.reducer; 
-export const { changeUser } = userSlice.actions; 
+export default userSlice.reducer;
+export const { changeUser } = userSlice.actions;

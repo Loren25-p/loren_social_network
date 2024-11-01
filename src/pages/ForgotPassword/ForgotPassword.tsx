@@ -44,7 +44,7 @@ export const ForgotPassword = () => {
     const user = storedData.find((user: { userEmail: string; }) => user.userEmail === data.userEmail);
     
     if (user) {
-      navigate('/phoneSMS-page', { state: { email: user.userEmail } }); // Передаем email в state
+      navigate('/phoneSMS-page', { state: { email: user.userEmail } }); 
     } 
   };
   

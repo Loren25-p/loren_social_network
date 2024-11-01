@@ -93,7 +93,7 @@ export const RepeatPassword = () => {
                 errorText={errors.userPasswordRepeat?.message}
                 isError={!!errors.userPasswordRepeat}
                 {...field}
-                value={field.value || ''} // Убедитесь, что значение всегда строка
+                value={field.value || ''} 
               />
             )}
           />

@@ -5,12 +5,10 @@ import { authApi } from "./Api/authApi";
 export const store = configureStore({
   reducer: {
     userSlice,
-    [authApi.reducerPath]:authApi.reducer
+    [authApi.reducerPath]: authApi.reducer,
   },
-  middleware:(getDefaultMiddleware)=>
-    getDefaultMiddleware().concat([
-      authApi.middleware,
-    ])
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat([authApi.middleware]),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
